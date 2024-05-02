@@ -93,6 +93,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "b5aca75f-1349-44e3-a26b-25cd47ebf772"
+=======
+    "analytics": "e26cdede-3368-4453-8b55-a48dafba6a5b"
+>>>>>>> origin/Ruben-work
   }
 }
