@@ -19,8 +19,10 @@ export const routes: Routes = [
     {path: 'register', title: 'register', component: RegisterComponent},
     {path: 'sign-in', title: 'sign-in', component: SignInComponent},
     {path: 'pago', title: 'pago', component: PagoComponent},
-    { path: '**', component: PagenotfoundComponent },
-    {path: "", redirectTo: '/home', pathMatch: 'full'}
+    {path: "", redirectTo: '/home', pathMatch: 'full'},
+    { path: '**', component: PagenotfoundComponent }
+
+
 
 
 ];
