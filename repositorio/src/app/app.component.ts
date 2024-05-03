@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { CardComponent } from './component/card/card.component';
 import { ContactComponent } from './component/contact/contact.component';
@@ -11,7 +11,7 @@ import { SignInComponent } from './component/sign-in/sign-in.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavbarComponent,CardComponent,ContactComponent,FooterComponent,HomeComponent,RegisterComponent,SignInComponent],
+  imports: [RouterOutlet,RouterLink,NavbarComponent,CardComponent,ContactComponent,FooterComponent,HomeComponent,RegisterComponent,SignInComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
