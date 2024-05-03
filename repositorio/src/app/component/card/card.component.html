@@ -1,38 +1,130 @@
-<div class="card mb-3">
-  <img src="./assets/img/ServicioBasico.png" class="card-img-top" width="10px" style="height: auto; width: 700px;">
-  <div class="card-body">
-    <h5 class="card-title">Servicio Básico</h5>
-    <p class="card-text">.</p>
-    <p class="card-text"><small class="text-body-secondary">Acceso a instalaciones estándar.
-      Clases básicas de grupo.
-      Equipo de entrenamiento estándar.
-      Asesoramiento nutricional básico.</small></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - TitanFit Gym</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('./assets/img/fondocatalogo.png');
+      background-size: cover;
+      background-position: center;
+      height: 87vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 250px;
+
+    }
+    .card-content {
+      height: 230px;
+      overflow-y: auto;
+    }
+
+    .card {
+      border: 3px solid #ffeb3b;
+    }
+
+
+    .card-title {
+      text-align: center;
+    }
+
+    .card-text strong {
+      font-weight: bold;
+    }
+    .card {
+      background-color: #212224;
+
+    }
+    .btn-vermas {
+      background-color: yellow;
+      color: black;
+      width: 100%;
+      text-align: center;
+      border-color:  #000000;
+      border-width: 2px;
+    }
+    .amarillo{
+      color: yellow;
+    }
+      .blanco{
+        color: white;
+      }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="scrollable-card">
+        <div class="card h-100 d-flex">
+          <img src="./assets/img/ServicioBasico.png" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <div class="card-content">
+              <h5 class="card-title" class="amarillo"><strong>Servicio Básico</strong></h5>
+              <p class="card-text" class="blanco">Acceso a instalaciones estándar.
+                Clases básicas de grupo.
+                Equipo de entrenamiento estándar.
+                Asesoramiento nutricional básico.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-vermas">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="scrollable-card">
+        <div class="card h-100 d-flex">
+          <img src="./assets/img/ServicioIntermedio.png" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <div class="card-content">
+              <h5 class="card-title" class="amarillo"><strong>Servicio Intermedio</strong></h5>
+              <p class="card-text" class="blanco">Acceso a todas las instalaciones estándar y avanzadas.
+                Amplia variedad de clases grupales.
+                Equipo de entrenamiento avanzado.
+                Sesiones de entrenamiento personalizadas ocasionalmente.
+                Asesoramiento nutricional más detallado.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-vermas">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="scrollable-card">
+        <div class="card h-100 d-flex">
+          <img src="./assets/img/ServicioAvanzado.png" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <div class="card-content">
+              <h5 class="card-title" class="amarillo"><strong>Servicio Avanzado</strong></h5>
+              <p class="card-text" class="blanco">Acceso exclusivo a áreas VIP y servicios de lujo.
+                Clases grupales de élite.
+                Entrenamiento personalizado regular.
+                Uso de equipo de última generación.
+                Sesiones de entrenamiento personalizadas frecuentes.
+                Servicios de spa y recuperación post-entrenamiento.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-vermas">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="card mb-3">
-  <img src="./assets/img/ServicioIntermedio.png" class="card-img-top" width="10px" style="height: auto; width: 700px;">
-  <div class="card-body">
-    <h5 class="card-title">Servicio Intermedio</h5>
-    <p class="card-text">.</p>
-    <p class="card-text"><small class="text-body-secondary">Acceso a todas las instalaciones estándar y avanzadas.
-      Amplia variedad de clases grupales.
-      Equipo de entrenamiento avanzado.
-      Sesiones de entrenamiento personalizadas ocasionalmente.
-      Asesoramiento nutricional más detallado.</small></p>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <img src="./assets/img/ServicioAvanzado.png" class="card-img-top" width="10px" style="height: auto; width: 700px;" display="flex">
-  <div class="card-body">
-    <h5 class="card-title">Servicio Avanzado</h5>
-    <p class="card-text">.</p>
-    <p class="card-text"><small class="text-body-secondary">Acceso exclusivo a áreas VIP y servicios de lujo.
-      Clases grupales de élite.
-      Entrenamiento personalizado regular.
-      Uso de equipo de última generación.
-      Sesiones de entrenamiento personalizadas frecuentes.
-      Servicios de spa y recuperación post-entrenamiento.</small></p>
-  </div>
-</div>
+</body>
+</html>
