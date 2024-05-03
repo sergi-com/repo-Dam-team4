@@ -8,11 +8,12 @@ import { RegisterComponent } from './component/register/register.component';
 import { SignInComponent } from './component/sign-in/sign-in.component';
 
 export const routes: Routes = [
+    {path: 'home', title: 'home', component: HomeComponent},
     {path: 'card', title: 'card', component: CardComponent},
     {path: 'contact', title: 'contact', component: ContactComponent},
     {path: 'footer', title: 'footer', component: FooterComponent},
-    {path: 'home', title: 'home', component: HomeComponent},
     {path: 'navbar', title: 'navbar', component: NavbarComponent},
     {path: 'register', title: 'register', component: RegisterComponent},
-    {path: 'sign-in', title: 'sign-in', component: SignInComponent}
+    {path: 'sign-in', title: 'sign-in', component: SignInComponent},
+    {path: "", redirectTo: '/home', pathMatch: 'full'}
 ];
