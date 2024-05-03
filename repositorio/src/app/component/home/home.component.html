@@ -3,39 +3,94 @@
 <head>
     <title>TitanFit Gym</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+    *{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+        body {
+            background-image: url('./assets/img/imagen.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 90%;
+            padding-top: 30px;
+            padding-bottom: 90px ;
+        }
+        .content {
+          background-color: #212224;
+          padding: 20px;
+          border-radius: 10px;
+          color: black;
+          border: 3px solid yellow;
+        }
+        .amarillo{
+      color: yellow;
+    }
+      .blanco{
+        color: white;
+      }
+
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center mt-4">Bienvenido a TitanFit Gym</h1>
-        <h2 class="mt-4">Sobre nosotros</h2>
-        <p>TitanFit Gym es tu lugar para mantenerte en forma y saludable. Ofrecemos una variedad de clases y equipos para ayudarte a alcanzar tus objetivos de fitness.</p>
-        <h2 class="mt-4">Nuestros servicios</h2>
-        <ul>
-            <li>Acceso a instalaciones estándar. Clases básicas de grupo. Equipo de entrenamiento estándar. </li>
-            <li>Asesoramiento nutricional básico.</li>
-            <li>Servicio Intermedio</li>
-            <li>Acceso a todas las instalaciones estándar y avanzadas. Amplia variedad de clases grupales. </li>
-            <li>Equipo de entrenamiento avanzado. Sesiones de entrenamiento personalizadas ocasionalmente. </li>
-            <li>Asesoramiento nutricional más detallado.</li>
-            <li>Servicio Avanzado</li>
-            <li>Acceso exclusivo a áreas VIP y servicios de lujo. Clases grupales de élite. 
-                Entrenamiento personalizado regular. Uso de equipo de última generación. 
-                Sesiones de entrenamiento personalizadas frecuentes. 
-                Servicios de spa y recuperación post-entrenamiento.</li>
-        </ul>
-        <h3>Quienes somos</h3>
-        <ul>
-            <li>Sergi Company</li>
-            <li>Jorge Caballero</li>
-            <li>Ruben Flor</li>
-            <li>Felix Aparicio</li>
-            <li>Raul Ferris</li>
-            <li>Alejandro Estrems</li>
-        </ul>
-        <h2 class="mt-4">Información de contacto</h2>
-        <p>Dirección: Carrer del Músic Peydró, 44, Ciudad: Valencia, País: ESPAÑA</p>
-        <p>Telefono +34 85 444 444</p>
-        <p>Email: titanfitgym.infotitanfit.com</p>
+    <div class="container-fluid h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-8">
+                <div class="content">
+                    <h1  class="text-center mt-4" ><strong class="amarillo">Bienvenido a TitanFit Gym</strong></h1>
+                    <h2 class="mt-4"><span class="yellow-title" class="amarillo"><strong>Sobre nosotros</strong></span></h2>
+                    <p class="blanco">TitanFit Gym es tu lugar para mantenerte en forma y saludable. Ofrecemos una variedad de clases y equipos para ayudarte a alcanzar tus objetivos de fitness.</p>
+                    <h2 class="mt-4"><span class="yellow-title" class="amarillo"><strong>Nuestros servicios</strong></span></h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="amarillo"><strong>Servicio Básico</strong></h3>
+                            <ul class="blanco">
+                                <li>Acceso a instalaciones estándar.</li>
+                                <li>Clases básicas de grupo.</li>
+                                <li>Equipo de entrenamiento estándar.</li>
+                                <li>Asesoramiento nutricional básico.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="amarillo"><strong>Servicio Intermedio</strong></h3>
+                            <ul class="blanco">
+                                <li>Acceso a todas las instalaciones estándar y avanzadas.</li>
+                                <li>Amplia variedad de clases grupales.</li>
+                                <li>Equipo de entrenamiento avanzado.</li>
+                                <li>Sesiones de entrenamiento personalizadas ocasionalmente.</li>
+                                <li>Asesoramiento nutricional más detallado.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="amarillo"><strong>Servicio Avanzado</strong></h3>
+                            <ul class="blanco">
+                                <li>Acceso exclusivo a áreas VIP y servicios de lujo.</li>
+                                <li>Clases grupales de élite.</li>
+                                <li>Entrenamiento personalizado regular.</li>
+                                <li>Uso de equipo de última generación.</li>
+                                <li>Sesiones de entrenamiento personalizadas frecuentes.</li>
+                                <li>Servicios de spa y recuperación post-entrenamiento.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3><span class="yellow-title" class="amarillo"><strong>Quienes somos</strong></span></h3>
+                    <ul class="blanco">
+                        <li>Sergi Company</li>
+                        <li>Jorge Caballero</li>
+                        <li>Ruben Flor</li>
+                        <li>Felix Aparicio</li>
+                        <li>Raul Ferris</li>
+                        <li>Alejandro Estrems</li>
+                    </ul>
+                    <h2 class="mt-4"><span class="yellow-title" class="amarillo"><strong>Información de contacto</strong></span></h2>
+                    <p class="blanco">Dirección: Carrer del Músic Peydró, 44, Ciudad: Valencia, País: ESPAÑA</p>
+                    <p class="blanco">Telefono +34 85 444 444</p>
+                    <p class="blanco">Email: titanfitgym.infotitanfit.com</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
