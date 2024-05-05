@@ -1,5 +1,15 @@
 # Repositorio
 
+## REVISIÓN MAQUETACIÓN
+
+1. La Tipografía usada está muy pequeña y se deforman los parráfos cuando la ventana cambia de tamaño.
+2. Faltan elementos en el footer
+3. No se puede ver ninguna página de producto
+4. los botones de ver mas de la página de catalogo van a la ruta del home
+5. La maquetación esta bastante bien. Pueden presentarse a la fase 4. El lunes reviso los cambios.
+
+## REVISIÓN DOCUMENTACION
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
 ## Development server
