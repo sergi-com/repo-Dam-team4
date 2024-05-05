@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { ServicioBasicoComponent } from './component/servicios/servicio-basico/servicio-basico.component';
 import { ServicioIntermedioComponent } from './component/servicios/servicio-intermedio/servicio-intermedio.component';
 import { ServicioAvanzadoComponent } from './component/servicios/servicio-avanzado/servicio-avanzado.component';
+import { PagoComponent } from './component/pago/pago.component';
 
 export const routes: Routes = [
     {path: 'home', title: 'home', component: HomeComponent},
@@ -18,6 +19,7 @@ export const routes: Routes = [
     {path: 'contact', title: 'contact', component: ContactComponent},
     {path: 'footer', title: 'footer', component: FooterComponent},
     {path: 'navbar', title: 'navbar', component: NavbarComponent},
+    {path: 'pago', title: 'pago',component: PagoComponent},
     {path: 'register', title: 'register', component: RegisterComponent},
     {path: 'sign-in', title: 'sign-in', component: SignInComponent},
     {path: 'basico', title: 'basico', component: ServicioBasicoComponent},
