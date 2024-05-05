@@ -12,6 +12,7 @@ import { ServicioBasicoComponent } from './component/servicios/servicio-basico/s
 import { ServicioIntermedioComponent } from './component/servicios/servicio-intermedio/servicio-intermedio.component';
 import { ServicioAvanzadoComponent } from './component/servicios/servicio-avanzado/servicio-avanzado.component';
 import { PagoComponent } from './component/pago/pago.component';
+import { PrivacypolicyComponent } from './component/misc/privacypolicy/privacypolicy.component';
 
 export const routes: Routes = [
     {path: 'home', title: 'home', component: HomeComponent},
@@ -25,8 +26,10 @@ export const routes: Routes = [
     {path: 'basico', title: 'basico', component: ServicioBasicoComponent},
     {path: 'intermedio', title: 'intermedio', component: ServicioIntermedioComponent},
     {path: 'avanzado', title: 'avanzado', component: ServicioAvanzadoComponent},
-    { path: '**', component: PagenotfoundComponent },
-    {path: "", redirectTo: '/home', pathMatch: 'full'}
+    {path: 'privacypolicy', title: 'privacypolicy', component: PrivacypolicyComponent},
+    {path: "", redirectTo: '/home', pathMatch: 'full'},
+    { path: '**', component: PagenotfoundComponent }
+
 
 
 ];
