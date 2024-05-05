@@ -5,47 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicio Avanzado - Detalles</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body {
+      background-image: url('./assets/img/fondoavanzado.png');
+      height: 80.6vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    header {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    h1, h2, h3, h4, h5, h6,
+    p, li {
+      font-weight: bold;
+      color: white;
+    }
+    main {
+      background-color: #212224;
+      border-radius: 15px;
+      padding: 20px;
+      border: 2px solid #ffeb3b;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .btn-primary {
+      background-color: yellow;
+      color: black;
+      border-color: #000000;
+      border-width: 3px;
+    }
+    h1 {
+      color: yellow;
+    }
+    .btn-primary:hover {
+      background-color: black;
+      color: yellow;
+    }
+    .details-container {
+      background-color: #212224;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      border: 2px solid #ffeb3b;
+    }
+    .botones-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .middle-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header class="p-4 bg-light">
-    <h1 class="text-center">Detalles del Servicio Avanzado</h1>
-  </header>
-  <main class="container my-5">
+  <div class="container my-5">
     <div class="row">
-      <div class="col-md-6 mx-auto">
-        <p>El Servicio Avanzado incluye los siguientes beneficios:</p>
-        <ul>
-          <li>Acceso exclusivo a áreas VIP y servicios de lujo: Esto sugiere que los clientes tienen acceso a áreas exclusivas dentro de un gimnasio
-            o centro de bienestar que ofrecen comodidades especiales, como salas de estar elegantes, áreas de relajación privadas o servicios personalizados.</li>
-          <li>Clases grupales de élite: Estas son clases de ejercicio dirigidas por instructores altamente calificados y especializados en áreas
-            específicas como pilates, yoga, entrenamiento de alta intensidad, entre otros. Estas clases pueden ofrecer un nivel más alto de atención
-            personalizada y adaptación a las necesidades individuales de los participantes.</li>
-          <li>Entrenamiento personalizado regular: Implica trabajar uno a uno con un entrenador personal para desarrollar un plan de entrenamiento
-            adaptado a tus objetivos específicos de fitness y salud. Este enfoque personalizado puede ayudar a optimizar los resultados y minimizar
-            el riesgo de lesiones.</li>
-          <li>Uso de equipo de última generación: Esto se refiere a la disponibilidad de equipos de ejercicio de alta calidad y tecnología avanzada,
-            que pueden incluir máquinas de cardio, pesas libres, equipo de fuerza y ​​tecnología de seguimiento del rendimiento.</li>
-          <li>Sesiones de entrenamiento personalizadas frecuentes: Además del entrenamiento personalizado regular, esto sugiere que los clientes
-            tienen acceso a sesiones de seguimiento y ajuste frecuentes para garantizar que estén progresando hacia sus objetivos de manera efectiva
-            y segura.</li>
-            <li>Servicios de spa y recuperación post-entrenamiento: Después de una sesión intensa de ejercicio, los clientes pueden acceder a servicios
-              de spa y recuperación para ayudar a relajar los músculos, aliviar el estrés y mejorar la recuperación, que pueden incluir masajes, baños
-              de vapor, terapias de frío/calor, entre otros.</li>
-        </ul>
-
-        <p>¡Esperamos que disfrutes de estos beneficios al máximo!</p>
-
-        <p>60€ al mes</p>
-
-        <div class="text-center mt-4">
-          <a routerLink="/card" class="btn btn-primary">Volver atrás</a>
-          <a routerLink="/pago" class="btn btn-primary">Suscribirse</a>
+        <div class="details-container">
+          <h1 class="text-center">Detalles del Servicio Avanzado</h1>
+          <p>El Servicio Avanzado incluye los siguientes beneficios:</p>
+          <ul>
+            <li>Acceso exclusivo a áreas VIP y servicios de lujo: Esto sugiere que los clientes tienen acceso a áreas exclusivas dentro de un gimnasio o centro de bienestar que ofrecen comodidades especiales, como salas de estar elegantes, áreas de relajación privadas o servicios personalizados.</li>
+            <li>Clases grupales de élite: Estas son clases de ejercicio dirigidas por instructores altamente calificados y especializados en áreas específicas como pilates, yoga, entrenamiento de alta intensidad, entre otros. Estas clases pueden ofrecer un nivel más alto de atención personalizada y adaptación a las necesidades individuales de los participantes.</li>
+            <li>Entrenamiento personalizado regular: Implica trabajar uno a uno con un entrenador personal para desarrollar un plan de entrenamiento adaptado a tus objetivos específicos de fitness y salud. Este enfoque personalizado puede ayudar a optimizar los resultados y minimizar el riesgo de lesiones.</li>
+            <li>Uso de equipo de última generación: Esto se refiere a la disponibilidad de equipos de ejercicio de alta calidad y tecnología avanzada, que pueden incluir máquinas de cardio, pesas libres, equipo de fuerza y tecnología de seguimiento del rendimiento.</li>
+            <li>Sesiones de entrenamiento personalizadas frecuentes: Además del entrenamiento personalizado regular, esto sugiere que los clientes tienen acceso a sesiones de seguimiento y ajuste frecuentes para garantizar que estén progresando hacia sus objetivos de manera efectiva y segura.</li>
+            <li>Servicios de spa y recuperación post-entrenamiento: Después de una sesión intensa de ejercicio, los clientes pueden acceder a servicios de spa y recuperación para ayudar a relajar los músculos, aliviar el estrés y mejorar la recuperación, que pueden incluir masajes, baños de vapor, terapias de frío/calor, entre otros.</li>
+          </ul>
+          <div class="middle-text">
+            <p>¡Esperamos que disfrutes de estos beneficios al máximo!</p>
+            <p>Costo: 60€ al mes</p>
+          </div>
+          <div class="botones-container">
+            <a href="#" class="btn btn-primary boton">Volver atrás</a>
+            <a href="#" class="btn btn-primary boton">Suscribirse</a>
+          </div>
         </div>
       </div>
     </div>
-  </main>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
