@@ -1,11 +1,11 @@
 export interface servicios{
-    servicio: servicios [];
+  servicios: Servicio[];
 }
 
-export interface servicio{
-  id: number
-  imagen: string
-  nombre: string
-  contenido: string
-  precio: number
+export interface Servicio {
+  id: string;
+  nombre: string;
+  contenido: string;
+  precio: string;
+  imagen: string;
 }

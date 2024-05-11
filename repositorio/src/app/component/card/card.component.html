@@ -67,75 +67,31 @@
 <body>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-4">
+  <div class="row justify-content-space-evenly">
+    @for (servicio of bdservicio.servicios; track servicio; let idx = $index) {
+      <div class="col-md-4">
       <div class="scrollable-card">
         <div class="card h-100 d-flex">
-          <img src="./assets/img/ServicioBasico.png" class="card-img-top img-fluid" alt="...">
+          <img src="{{servicio.imagen}}" class="card-img-top img-fluid" alt="...">
           <div class="card-body">
             <div class="card-content">
-              <h5 class="card-title" class="amarillo"><strong>Servicio Básico</strong></h5>
-              <p class="card-text" class="blanco">Acceso a instalaciones estándar.
-                Clases básicas de grupo.
-                Equipo de entrenamiento estándar.
-                Asesoramiento nutricional básico.</p>
+              <h5 class="card-title" class="amarillo"><strong>{{servicio.nombre}}</strong></h5>
+              <p class="card-text" class="blanco">{{servicio.contenido}}</p>
+              <p class="card-text" class="blanco">{{servicio.precio}}</p>
             </div>
-            <a href="/basico" class="btn btn-primary btn-vermas">Ver más</a>
+            <a [routerLink]="'/servicio/' + idx" class="btn btn-primary btn-vermas">Ver más</a>
           </div>
         </div>
       </div>
     </div>
+    }
 
-    <div class="col-md-4">
-      <div class="scrollable-card">
-        <div class="card h-100 d-flex">
-          <img src="./assets/img/ServicioIntermedio.png" class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <div class="card-content">
-              <h5 class="card-title" class="amarillo"><strong>Servicio Intermedio</strong></h5>
-              <p class="card-text" class="blanco">Acceso a todas las instalaciones estándar y avanzadas.
-                Amplia variedad de clases grupales.
-                Equipo de entrenamiento avanzado.
-                Sesiones de entrenamiento personalizadas ocasionalmente.
-                Asesoramiento nutricional más detallado.</p>
-            </div>
-            <a routerLink="/intermedio" class="btn btn-primary btn-vermas">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="scrollable-card">
-        <div class="card h-100 d-flex">
-          <img src="./assets/img/ServicioAvanzado.png" class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <div class="card-content">
-              <h5 class="card-title" class="amarillo"><strong>Servicio Avanzado</strong></h5>
-              <p class="card-text" class="blanco">Acceso exclusivo a áreas VIP y servicios de lujo.
-                Clases grupales de élite.
-                Entrenamiento personalizado regular.
-                Uso de equipo de última generación.
-                Sesiones de entrenamiento personalizadas frecuentes.
-                Servicios de spa y recuperación post-entrenamiento.</p>
-            </div>
-            <a routerLink="/avanzado" class="btn btn-primary btn-vermas">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col10">
-      <div class="row">
-        @for (servicios of bdservicio.servicio; track servicios; let idx = $index) {}
-      </div>
-    </div>
-  </div>
-</div>
+
 
 </body>
 </html>

@@ -1,8 +1,7 @@
 import { JSONServiceService } from './../../service/json-service.service';
 import { Component,OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { servicio, servicios } from '../../common/servicios';
-
+import { servicios } from '../../common/servicios';
 
 
 @Component({
@@ -14,7 +13,7 @@ import { servicio, servicios } from '../../common/servicios';
 })
 export class CardComponent implements OnInit {
 
-  bdservicio : servicios;
+  bdservicio! : servicios;
 
   constructor(private JSONServiceService : JSONServiceService){}
 
@@ -27,12 +26,11 @@ export class CardComponent implements OnInit {
       next:(data) => {
         this.bdservicio = data;
       },
-
-      error: err => {console.log("error");},
-
+      error: err => {
+        console.log("error")
+      },
       complete:() => {
         console.log("completo");
-
       },
     })
 
