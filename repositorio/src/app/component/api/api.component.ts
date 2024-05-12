@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
+import { Fruit } from '../../service/api.model';
+import { FruitService } from '../../service/api.service';
 
 @Component({
-  selector: 'app-api',
-  standalone: true,
-  imports: [],
+  selector: 'app-fruits',
   templateUrl: './api.component.html',
-  styleUrl: './api.component.css'
+  styleUrls: ['./api.component.css']
 })
-export class ApiComponent {
+export class ApiComponent implements OnInit {
+  fruits: Fruit[] = [];
 
+  constructor(private fruitService: FruitService) { }
+
+  ngOnInit(): void {
+    this.getFruits();
+  }
+
+  getFruits(): void {
+    this.fruitService.getAllFruits()
+      .subscribe(fruits => this.fruits = fruits);
+  }
 }
