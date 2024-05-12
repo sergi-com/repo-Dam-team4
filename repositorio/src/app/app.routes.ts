@@ -14,6 +14,7 @@ import { ServicioAvanzadoComponent } from './component/servicios/servicio-avanza
 import { PagoComponent } from './component/pago/pago.component';
 import { PrivacypolicyComponent } from './component/misc/privacypolicy/privacypolicy.component';
 import { ApiComponent } from './component/api/api.component';
+import { ServicioComponent } from './component/servicio/servicio.component';
 
 export const routes: Routes = [
     {path: 'home', title: 'home', component: HomeComponent},
@@ -30,8 +31,11 @@ export const routes: Routes = [
     {path: 'privacypolicy', title: 'privacypolicy', component: PrivacypolicyComponent},
     {path: 'api', title: 'api', component: ApiComponent},
     {path: "", redirectTo: '/home', pathMatch: 'full'},
-    { path: '**', component: PagenotfoundComponent }
+    { path: '**', component: PagenotfoundComponent },
 
-
+    {
+      path: "servicios/:index",
+      component: ServicioComponent
+    }
 
 ];
