@@ -1,7 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Fruit } from '../../service/api.model';
-import { FruitService } from '../../service/api.service';
+import { FruitService } from '../../service/fruitservice.service';
 
 @Component({
   selector: 'app-fruits',
@@ -9,16 +8,27 @@ import { FruitService } from '../../service/api.service';
   styleUrls: ['./api.component.css']
 })
 export class ApiComponent implements OnInit {
-  fruits: Fruit[] = [];
+  fruits: any;
 
-  constructor(private fruitService: FruitService) { }
+  constructor(private Fruit : FruitService) { }
 
   ngOnInit(): void {
     this.getFruits();
   }
 
   getFruits(): void {
-    this.fruitService.getAllFruits()
-      .subscribe(fruits => this.fruits = fruits);
+    this.Fruit.getAllFruits().subscribe(
+        {
+          next: (data)=>{
+            console.log(data)
+          },
+          error: (err)=>{
+            console.log(err)
+          },
+          complete: ()=>{
+            console.log('comp')
+          },
+        }
+      )
   }
 }
