@@ -2,12 +2,12 @@ body {
   background-image: url('../../../assets/img/fondocatalogo.png');
   background-size: cover;
   background-position: center;
-  height: 78.8vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5.3em;
-  padding-bottom: 3em;
+  padding-top: 10.3em;
+  padding-bottom: 10em;
 }
 
 * {

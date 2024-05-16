@@ -3,12 +3,12 @@
 }
 body {
   background-image: url('../../../assets/img/fondocontacto.png');
-  height: 78.8vh;
+  height: 87.8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5.3em;
-  padding-bottom: 3em;
+  padding-top: 8.3em;
+  padding-bottom: 6em;
 }
 .container-background {
   background-color: #212224;
