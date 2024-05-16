@@ -1,21 +1,21 @@
-export interface Fruit {
-  id: number;
-  name: string;
-  family: string;
-  genus: string;
-  order: string;
-  carbohydrates: number;
-  protein: number;
-  fat: number;
-  energy: number;
-  sugar: number;
-  calcium: number;
-  iron: number;
-  magnesium: number;
-  phosphorus: number;
-  potassium: number;
-  sodium: number;
-  zinc: number;
-  copper: number;
-  manganese: number;
+export interface Fruits{
+  Fruit: Fruits[]
+  Nutrition:Nutritions[]
+}
+
+export interface Fruits {
+  name: string
+  id: number
+  family: string
+  order: string
+  genus: string
+  nutritions: Nutritions
+}
+
+export interface Nutritions {
+  calories: number
+  fat: number
+  sugar: number
+  carbohydrates: number
+  protein: number
 }
