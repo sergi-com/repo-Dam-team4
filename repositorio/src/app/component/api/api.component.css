@@ -1,0 +1,49 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+}
+
+
+.container-fluid{
+  background-image: url("../../../assets/img/fondoapi.png");
+  height: 590vh;
+  margin-top: -1em;
+}
+
+.card-body1{
+  background-color: #212224;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  border: 3px solid yellow;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.card-title, .card-text{
+  color: yellow;
+  font-size: 1.4em;
+}
+
+#dentro{
+  background-color: #212224;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.negrofondo{
+  background-color: #212224;
+}
+
+#dentro1{
+  background-color: #212224;
+  border-radius: 10px;
+  color: yellow;
+  text-align: center;
+}
+
+.subrayado
+{
+  border-bottom: 2px solid yellow;
+}

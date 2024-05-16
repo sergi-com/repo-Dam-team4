@@ -1,18 +1,18 @@
-<!-- lo que puse yo -->
 <div class="container-fluid">
   <div class="row mx-5 my-5 p-4">
     @for (fruta of fruits.FruitDataBase; track fruta) {
       <div class="col-2  my-3 p-3">
         <div class="card" style="width: 18rem;">
 
+          <div class="card-body1">
           <div class="card-body">
-            <h5 class="card-title">{{fruta.name}}</h5>
-            <p class="card-text">{{fruta.id}}</p>
+            <h5 class="card-title"><strong>{{fruta.name}}</strong></h5>
+            <p class="card-text"><strong>{{fruta.id}}</strong></p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{fruta.family}}</li>
-            <li class="list-group-item">{{fruta.genus}}</li>
-            <li class="list-group-item"> NUTRITION FACTS
+          <ul id="dentro" class="list-group list-group-flush">
+            <li id="dentro" class="list-group-item"><strong>{{fruta.family}}</strong></li>
+            <li id="dentro" class="list-group-item"><strong>{{fruta.genus}}</strong></li>
+            <li id="dentro" class="list-group-item"> <strong class="subrayado">NUTRITION FACTS</strong>
               <ul>
                 <li>Calories: {{fruta.nutritions.calories}}</li>
                 <li>Carbohydrates: {{fruta.nutritions.carbohydrates}}</li>
@@ -21,39 +21,14 @@
                 <li>Sugar: {{fruta.nutritions.sugar}}</li>
               </ul>
             </li>
-            <li class="list-group-item">{{fruta.order}}</li>
+            <li id="dentro1" class="list-group-item"><strong>{{fruta.order}}</strong></li>
           </ul>
         </div>
       </div>
+    </div>
     }
   </div>
 </div>
 
 
 
-
-<!-- lo de ustedes
-
-  <div class="container">
-  <div class="row justify-content-space-evenly">
-    @for (Fruit of fruits; track fruits ; let idx = $index) {
-      <div class="col-md-4">
-      <div class="scrollable-card">
-        <div class="card h-100 d-flex">
-          <div class="card-body">
-            <div class="card-content">
-              <h5 class="card-title" class="amarillo"><strong>{{fruits.name}}</strong></h5>
-              <p class="card-text" class="blanco">Familia: {{ fruits.family }}</p>
-              <p class="card-text" class="blanco">Orden:{{ fruits.order }}</p>
-              <p class="card-text" class="blanco">Genero:{{ fruits.genus }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    }
-
-
-
-  </div>
-</div> -->
