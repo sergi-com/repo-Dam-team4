@@ -1,0 +1,57 @@
+body {
+  background-image: url('../../../assets/img/fondocatalogo.png');
+  background-size: cover;
+  background-position: center;
+  height: 87.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.3em;
+  padding-bottom: 3em;
+}
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+
+}
+.card-content {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.card {
+  border: 3px solid #ffeb3b;
+}
+
+
+.card-title {
+  text-align: center;
+}
+
+.card-text strong {
+  font-weight: bold;
+}
+.card {
+  background-color: #212224;
+
+}
+.btn-vermas {
+  background-color: yellow;
+  color: black;
+  width: 100%;
+  text-align: center;
+  border-color:  #000000;
+  border-width: 2px;
+}
+.amarillo{
+  color: yellow;
+}
+  .blanco{
+    color: white;
+    font-size: 1.5em;
+  }

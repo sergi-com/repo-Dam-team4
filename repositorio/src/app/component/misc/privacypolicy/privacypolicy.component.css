@@ -1,0 +1,31 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  background-image: url('../../../../assets/img/fondopolitica.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding-top: 4em;
+  padding-bottom: 3em;
+
+}
+.amarillo {
+  color: yellow;
+}
+.lead {
+  font-size: 1.25em;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 3px solid yellow;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #212224;
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
