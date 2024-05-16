@@ -3,7 +3,7 @@ export interface servicios{
 }
 
 export interface Servicio {
-  id: string;
+  id: number;
   nombre: string;
   contenido: string;
   contenidoex: string;

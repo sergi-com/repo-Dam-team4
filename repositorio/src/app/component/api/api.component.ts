@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FruitService } from '../../service/fruitservice.service';
-import { Fruits } from '../../common/api.model';
+import { Fruits } from '../../common/fruits_interface';
 
 @Component({
   selector: 'app-fruits',
@@ -8,7 +8,7 @@ import { Fruits } from '../../common/api.model';
   styleUrls: ['./api.component.css']
 })
 export class ApiComponent implements OnInit {
-  fruits: any;
+  fruits!: Fruits;
 
   constructor(private Fruit : FruitService) { }
 
@@ -20,6 +20,7 @@ export class ApiComponent implements OnInit {
     this.Fruit.getAllFruits().subscribe(
         {
           next: (data)=>{
+            this.fruits = data
             console.log(data)
           },
           error: (err)=>{
