@@ -16,7 +16,7 @@
   color: black;
   border: 3px solid yellow;
   text-align: center;
-  margin-left: 36em;
+  margin-left: 32em;
 }
 
 .card-header{
@@ -36,4 +36,13 @@
 img{
   width: 20em;
 
+}
+
+.btn-vermas {
+  background-color: yellow;
+  color: black;
+  width: 100%;
+  text-align: center;
+  border-color:  #000000;
+  border-width: 2px;
 }
