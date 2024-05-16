@@ -25,7 +25,7 @@ export const routes: Routes = [
     {path: 'pago', title: 'pago',component: PagoComponent},
     {path: 'register', title: 'register', component: RegisterComponent},
     {path: 'sign-in', title: 'sign-in', component: SignInComponent},
-    {path: 'servicio', title: 'servicios', component:ServicioComponent},
+    {path: 'servicio/:index', title: 'servicios', component:ServicioComponent},
     {path: 'basico', title: 'basico', component: ServicioBasicoComponent},
     {path: 'intermedio', title: 'intermedio', component: ServicioIntermedioComponent},
     {path: 'avanzado', title: 'avanzado', component: ServicioAvanzadoComponent},

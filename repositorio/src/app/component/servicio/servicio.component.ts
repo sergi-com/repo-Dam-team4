@@ -1,6 +1,6 @@
-import { servicios } from './../../common/servicios';
+import { Servicio, servicios } from './../../common/servicios';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { DataService } from '../../service/data.service';
 
 
@@ -12,20 +12,22 @@ import { DataService } from '../../service/data.service';
   styleUrl: './servicio.component.css'
 })
 export class ServicioComponent implements OnInit {
-  bdservicio: any;
+  bdservicio!: Servicio;
+  bdata:any;
   constructor(
     private dataservice: DataService,
-    private activatedRouted: ActivatedRoute
+    private activatedRouted: ActivatedRoute,
   ){}
   ngOnInit(): void {
-    this.loadservicioOne();
+    this.loadheroeONe();
   }
-  loadservicioOne(){
+  loadheroeONe(){
     const index = this.activatedRouted.snapshot.params['index'];
-    this.dataservice.getServicio().subscribe(
+    this.dataservice.getSupeHeroe().subscribe(
       {
         next: (data)=>{
-         this.bdservicio = data.nombre[index]
+          this.bdata = data.servicios[index]
+          console.log(data.servicios[index])
         },
         error: (err)=>{
           console.log(err)
@@ -36,4 +38,5 @@ export class ServicioComponent implements OnInit {
       }
     )
   }
+
 }

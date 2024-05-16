@@ -10,10 +10,9 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getServicios(): Observable<Servicio>{
-    return this.http.get<Servicio>('/assets/data/data.json');
+    return this.http.get<Servicio>('/assets/data/datos.json');
   }
-
-  getServicio():Observable<Servicio>{
-    return this.http.get<Servicio>('/assets/data/data.json');
+  getSupeHeroe():Observable<any>{
+    return this.http.get<any>('/assets/data/datos.json');
   }
 }
