@@ -1,0 +1,37 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  background-image: url('../../../assets/img/fondocontacto.png');
+  height: 87.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.3em;
+  padding-bottom: 3em;
+}
+.container-background {
+  background-color: #212224;
+  border-radius: 20px;
+  padding: 30px;
+  border: 3px solid #ffeb3b;
+
+}
+.yellow-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+;
+}
+
+.btn-vermas {
+  background-color: yellow;
+  color: black;
+  width: 30%;
+  text-align: center;
+  border-color: #000000;
+  border-width: 2px;
+}
+.amarillo{
+  color: yellow;
+}
