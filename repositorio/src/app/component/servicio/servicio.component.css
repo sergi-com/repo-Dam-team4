@@ -1,61 +1,39 @@
 * {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
 }
-body {
-  background-image: url('../../../assets/img/fondointermedio.png');
-  height: 80.6vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-header {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-}
-h1, h2, h3, h4, h5, h6,
-p, li {
-  font-weight: bold;
-  color: white;
-  font-size: 1.16em;
+
+.container-fluid{
+  background-image: url("../../../assets/img/ServicioAvanzado.png");
+  height: 80em;
 
 }
-main {
-  background-color: #212224;
-  border-radius: 15px;
-  padding: 20px;
-  border: 2px solid #ffeb3b;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.btn-primary {
-  background-color: yellow;
-  color: black;
-  border-color: #000000;
-  border-width: 3px;
-}
-h1 {
-  color: yellow;
-  font-size: 2.3em;
 
-}
-.btn-primary:hover {
-  background-color: black;
-  color: yellow;
-}
-.details-container {
+.card{
   background-color: #212224;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 10px;
-  border: 2px solid #ffeb3b;
-}
-.botones-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.middle-text {
+  color: black;
+  border: 3px solid yellow;
   text-align: center;
-  margin-bottom: 10px;
+  margin-left: 36em;
+}
+
+.card-header{
+  border-bottom: 2px solid yellow;
+  color: yellow;
+  font-size: 1.4em;
+}
+
+#contenido{
+  background-color: #212224;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.25em;
+}
+
+img{
+  width: 20em;
+
 }

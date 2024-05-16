@@ -4,14 +4,12 @@
     <div class="col-2 mb-5  my-5 p-5">
       <div class="card" style="width: 50rem;">
 
-        <div class="card-header">
+        <h1 class="card-header">
           {{bdata.nombre}}
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">{{bdata.contenidoex}}</li>
-          <li class="list-group-item">{{bdata.precio}}</li>
-          <li class="list-group-item">{{bdata.imagen}}</li>
-        </ul>
+        </h1>
+        <img src="{{bdata.imagen}}" class="card-img-top img-fluid mx-auto" >
+          <li id="contenido" class="list-group-item">{{bdata.contenidoex}}</li>
+          <li id="contenido" class="list-group-item">{{bdata.precio}}</li>
       </div>
     </div>
   </div>
