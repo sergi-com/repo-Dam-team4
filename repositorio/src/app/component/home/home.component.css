@@ -12,6 +12,20 @@ body {
   padding-bottom: 4.5em;
 }
 
+.content2 {
+  background-color: #212224;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  border: 3px solid yellow;
+  margin-left: 21em;
+  margin-right: 21em;
+  margin-bottom: 4em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
 .content {
   background-color: #212224;
   padding: 20px;
@@ -24,6 +38,7 @@ body {
   color: yellow;
 }
 
+
 .blanco {
   color: white;
   font-size: 1.5em;
@@ -34,4 +49,3 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-
